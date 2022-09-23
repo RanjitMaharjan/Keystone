@@ -370,7 +370,7 @@ p {
 }
 
 .mt--210 {
-  margin-top: -110px;
+  margin-top: -210px;
 }
 
 .mt--80 {
@@ -687,6 +687,7 @@ p {
   -webkit-animation: section-animation-2 3s infinite;
   animation: section-animation-2 3s infinite;
 }
+
 .section__title-wrapper {
   position: relative;
   z-index: 1;
@@ -715,6 +716,39 @@ p {
     opacity: 0;
   }
 }
+
+.about__list .rounded span {
+  position: relative;
+}
+.about__list .rounded span img {
+  position: absolute;
+  left: -14px;
+  bottom: 12px;
+  z-index: -1;
+  -webkit-animation: section-animation 3s infinite;
+  animation: section-animation 3s infinite;
+}
+.about__list .rounded span.yellow-bg-big img {
+  bottom: 15px;
+  width: 120%;
+  -webkit-animation: section-animation-2 3s infinite;
+  animation: section-animation-2 3s infinite;
+}
+.about__list .rounded span.yellow-bg-sm img {
+  bottom: 10px;
+  width: 120%;
+  -webkit-animation: section-animation-2 3s infinite;
+  animation: section-animation-2 3s infinite;
+}
+
+.about__list .rounded{
+  z-index: -1;
+}
+
+.about__list{
+  display: flex;
+}
+
 @keyframes section-animation-2 {
   0% {
     width: 0;
@@ -1835,7 +1869,7 @@ p {
   }
 }
 .hero__title {
-  font-size: 60px;
+  font-size: 30px;
   line-height: 1;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -2192,6 +2226,12 @@ h5.card-title {
 	background-color: #eeeeee;
 	padding-bottom: -25px;
 	height: fit-content;
+}
+
+@media (max-width: 575px) {
+  .card__responsive {
+    margin: auto;
+  }
 }
 
 .card-title {
@@ -5828,13 +5868,20 @@ p.checkout-coupon input[type=text]:focus {
   }
 }
 @media (max-width: 575px) {
-  .course__area .partners {
+  .partners {
     margin: auto;
   }
 }
 @media (max-width: 575px) {
-  .counter__area .counters {
-    margin-right: 10px;
+  .counters {
+    width: 50%;
+    max-width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 575px) {
+  .countrow {
+    margin: auto;
   }
 }
 .about__student img {
@@ -8706,6 +8753,8 @@ p.checkout-coupon input[type=text]:focus {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  color: #6d6e75;
+  font-size: 18px;
   border: none;
   outline: none;
 }
@@ -8854,4 +8903,5 @@ p.checkout-coupon input[type=text]:focus {
 .callbtn{
   border: none;
 }
+
 /*# sourceMappingURL=style.css.map */
